@@ -1,4 +1,6 @@
 Merrymaker::Application.routes.draw do
+  devise_for :admin_users
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   root  'static_pages#home'
   match '/about',   to: 'static_pages#about',   via: 'get'
   match '/contact', to: 'static_pages#contact', via: 'get'
