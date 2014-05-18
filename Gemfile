@@ -34,3 +34,5 @@ end
 
 gem 'devise'
 gem 'rails_admin'
+gem 'carrierwave'
+gem 'rmagick', :require => 'RMagick'
