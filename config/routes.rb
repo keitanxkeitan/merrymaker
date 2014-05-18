@@ -1,4 +1,5 @@
 Merrymaker::Application.routes.draw do
+  resources :products
   devise_for :admin_users
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   root  'static_pages#home'

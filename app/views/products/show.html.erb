@@ -1,0 +1,32 @@
+<%= javascript_include_tag "products_show" %>
+<div class="product clearfix">
+  <div class="product-left">
+    <div id="photo-gallery">
+      <div id="photo-main">
+	<%= image_tag @product.main_image.url %>
+      </div>
+      <p id="photo-caption"></p>
+      <ul id="photo-thumb">
+	<% @images.each do |image| %>
+	  <li>
+	    <div>
+	      <%= image_tag image.url %>
+	    </div>
+	  </li>
+	<% end %>
+      </ul>
+    </div>
+  </div>
+  <div class="product-right">
+    <div class="info-block">
+      <h1><%= @product.name %></h1>
+      <p class="price">$ <%= @product.price %></p>
+    </div>
+    <div class="detail-block">
+      <h3>Item Description</h3>
+      <div class="contbox">
+	<%= @product.description.html_safe %>
+      </div>
+    </div>
+  </div>
+</div>
