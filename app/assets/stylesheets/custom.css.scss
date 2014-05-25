@@ -140,9 +140,13 @@ footer {
 	height: 240px;
       }
       .name	 {
-        margin: 0;
-	color: #6f6f6f;
+	margin: 5px 0 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 	font-size: 12px;
+	line-height: 1.5;
+	color: #6f6f6f;
       }
       .price {
         margin: 4px 0 0 0;
