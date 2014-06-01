@@ -122,6 +122,18 @@ footer {
   width: 200px;
 }
 
+/* categories show */
+
+.category-sidebar {
+  h2 {
+    margin: 0;
+  }
+}
+
+.category-header {
+  border-bottom: solid 1px #e2e2e2;
+}
+
 /* products index */
 
 .products {
@@ -129,8 +141,8 @@ footer {
   margin: 0;
   li {
     float: left;
-    width: 204px;
-    margin: 0 0 0 31px;
+    width: 202px;
+    margin: 0 31px 0 0;
     height: 320px;
     overflow: auto;
     padding: 10px 0;
@@ -144,14 +156,14 @@ footer {
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
-	font-size: 12px;
+	font-size: 14px;
 	line-height: 1.5;
 	color: #6f6f6f;
       }
       .price {
         margin: 4px 0 0 0;
         font-weight: bold;
-	font-size: 14px;
+	font-size: 16px;
       }
     }
   }

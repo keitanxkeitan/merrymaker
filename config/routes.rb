@@ -1,4 +1,5 @@
 Merrymaker::Application.routes.draw do
+  resources :categories
   resources :products
   devise_for :admin_users
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'

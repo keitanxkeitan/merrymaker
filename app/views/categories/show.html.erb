@@ -1,0 +1,28 @@
+<div class="row">
+  <aside class="span3 category-sidebar">
+    <section>
+      <ul class="well nav nav-list select-list">
+	<li class="nav-header">Category</li>
+	<% @categories.each do |category| %>
+	  <li>
+	    <%= link_to category.name, category %>
+	  </li>
+	<% end %>
+      </ul>
+    </section>
+  </aside>
+  <div class="span9">
+    <div class="category-header">
+      <% if @category.nil? %>
+        <h3>Collection</h3>
+      <% else %>
+        <h3><%= @category.name %></h3>
+      <% end %>
+    </div>
+    <ul class="products clearfix">
+      <%= render @products %>
+    </ul>
+    
+    <%= will_paginate @products %>
+  </div>
+</div>
